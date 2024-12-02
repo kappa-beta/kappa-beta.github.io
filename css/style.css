@@ -1,0 +1,201 @@
+/* Убедитесь, что высота страницы 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Устанавливаем фон для всей страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1; /* Светлый текст для контраста с темным фоном */
+    line-height: 1.6;
+    background-color: #0a0a0a; /* Темный фон */
+    background-image: url('../images/deep_space.jpg'); /* Путь к изображению */
+    background-size: cover; /* Покрытие всего экрана */
+    background-position: center center; /* Центрируем картинку */
+    background-attachment: fixed; /* Фиксируем фон при прокрутке */
+    font-size: 16px;
+
+    /* Добавляем отступы по бокам для фона */
+    padding: 0 10%; /* 10% от ширины экрана слева и справа */
+}
+
+/* Основной контейнер для центровки содержимого */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Шапка */
+.header {
+    color: white;
+    text-align: center; /* Выровнять текст по центру */
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон */
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header .tagline {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.header .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #333;
+    background: #f1f1f1; /* Светлая кнопка */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.header .btn:hover {
+    background: #ddd;
+}
+
+/* Секция "Обо мне" */
+#about {
+    padding: 80px 20px;
+    background: rgba(18, 18, 18, 0.9); /* Темный фон с легкой прозрачностью */
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Акцентный зеленый цвет */
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #ddd; /* Светло-серый текст */
+    line-height: 1.8;
+}
+
+#about ul {
+    list-style: disc;
+    padding-left: 40px;
+    text-align: left; /* Выровнять текст по левому краю */
+    margin-top: 30px;
+}
+
+#about ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ccc; /* Светло-серый для списка */
+}
+
+/* Секция Контакты */
+#contact {
+    background-color: #222; /* Темный фон для контента */
+    padding: 60px 20px;
+    text-align: right; /* Выровнять текст по правому краю */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Акцентный зеленый цвет */
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #ddd; /* Светло-серый текст */
+    margin-bottom: 20px;
+}
+
+#contact a {
+    font-size: 1.1rem;
+    color: #1E90FF; /* Акцентный цвет */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #fff; /* Светлый цвет при наведении */
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Выровнять текст по правому краю */
+}
+
+#contact ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#contact ul li a {
+    font-size: 1.2rem;
+    color: #1E90FF; /* Акцентный цвет */
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #fff; /* Светлый цвет при наведении */
+    transform: scale(1.1);
+}
+
+/* Иконки соцсетей */
+#contact ul li a i {
+    margin-right: 8px;
+}
+
+/* Подвал */
+footer {
+    background: #111; /* Очень темный фон */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    body {
+        background-image: url('../images/deep_space_long.jpg'); /* Путь к изображению для мобильной версии */
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .tagline {
+        font-size: 1.2rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    #contact input, #contact textarea, #contact button {
+        font-size: 1rem;
+    }
+
+    .header .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    #about ul {
+        padding-left: 20px;
+    }
+}
